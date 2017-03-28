@@ -19,9 +19,7 @@ import com.example.xrecyclerview.XRecyclerView;
 
 import rx.Subscription;
 
-/**
- * 大安卓 fragment
- */
+
 public class AndroidFragment extends BaseFragment<FragmentAndroidBinding> {
 
     private static final String TAG = "AndroidFragment";
