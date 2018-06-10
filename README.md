@@ -15,4 +15,4 @@ A netease cloud music based UI, using GankIo and douban API development accord w
 
 - **gif演示**
 
-<img width="320" height=“590” src="https://github.com/gu0-kim/CloudReader-master/blob/master/file/screen.gif"></img>
+<img width="160" height=“274” src="https://github.com/gu0-kim/CloudReader-master/blob/master/file/screen.gif"></img>
