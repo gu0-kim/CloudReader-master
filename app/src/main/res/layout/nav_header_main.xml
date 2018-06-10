@@ -7,7 +7,7 @@
         android:background="@color/colorPageBg"
         android:orientation="vertical">
 
-        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:id="@+id/ll_header_bg"
             android:layout_width="match_parent"
             android:layout_height="@dimen/nav_header_height"
@@ -102,7 +102,8 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:paddingRight="16dp"
+            android:visibility="gone">
 
             <ImageView
                 android:layout_width="20dp"
@@ -114,32 +115,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:text="扫码下载"
-                android:textColor="@color/colorContent"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_nav_deedback"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/ripple_one_item_bg"
-            android:clickable="true"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_nav_deedback" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="问题反馈"
                 android:textColor="@color/colorContent"
                 android:textSize="15sp" />
 

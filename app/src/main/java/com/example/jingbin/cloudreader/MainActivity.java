@@ -106,12 +106,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView ivAvatar = (ImageView) headerView.findViewById(R.id.iv_avatar);
         ImgLoadUtil.displayCircle(ivAvatar, ConstantsImageUrl.IC_AVATAR);
         LinearLayout llNavHomepage = (LinearLayout) headerView.findViewById(R.id.ll_nav_homepage);
-        LinearLayout llNavScanDownload = (LinearLayout) headerView.findViewById(R.id.ll_nav_scan_download);
-        LinearLayout llNavDeedback = (LinearLayout) headerView.findViewById(R.id.ll_nav_deedback);
         LinearLayout llNavAbout = (LinearLayout) headerView.findViewById(R.id.ll_nav_about);
         llNavHomepage.setOnClickListener(this);
-        llNavScanDownload.setOnClickListener(this);
-        llNavDeedback.setOnClickListener(this);
         llNavAbout.setOnClickListener(this);
     }
 
@@ -175,26 +171,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void run() {
                         NavHomePageActivity.startHome(MainActivity.this);
-                    }
-                }, 360);
-
-                break;
-
-            case R.id.ll_nav_scan_download://扫码下载
-                mBinding.drawerLayout.closeDrawer(GravityCompat.START);
-                mBinding.drawerLayout.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        NavDownloadActivity.start(MainActivity.this);
-                    }
-                }, 360);
-                break;
-            case R.id.ll_nav_deedback:// 问题反馈
-                mBinding.drawerLayout.closeDrawer(GravityCompat.START);
-                mBinding.drawerLayout.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        NavDeedBackActivity.start(MainActivity.this);
                     }
                 }, 360);
                 break;

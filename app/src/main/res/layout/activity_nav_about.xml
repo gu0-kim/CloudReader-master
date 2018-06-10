@@ -68,16 +68,6 @@
                     android:layout_marginLeft="10dp" />
 
                 <TextView
-                    android:id="@+id/tv_function"
-                    style="@style/menuItem"
-                    android:clickable="true"
-                    android:text="更新日志" />
-
-                <View
-                    style="@style/horizontalLine"
-                    android:layout_marginLeft="10dp" />
-
-                <TextView
                     android:id="@+id/tv_about_star"
                     style="@style/menuItem"
                     android:clickable="true"
